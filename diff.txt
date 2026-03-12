@@ -1,0 +1,132 @@
+diff --git a/PROJECT_STATE.md b/PROJECT_STATE.md
+index 10c8e36..f89e437 100644
+--- a/PROJECT_STATE.md
++++ b/PROJECT_STATE.md
+@@ -70,19 +70,19 @@ Can speech communication be implemented by transmitting semantic representations
+ 
+ 1. Audio Capture
+ Microphone waveform input.
+-2. Speech Recognition
+-Convert speech to text.
++
++2. Speech Recognition (STT)
++Convert speech to text. Optionally outputs text + timestamps.
+ 
+ Candidate models:
+-??? Whisper
+-??? WhisperX
++??? Whisper / WhisperX
+ ??? wav2vec2
+ 
+ 3. Semantic Encoder
+ Convert text into semantic representation.
+ 
+ Possible approaches:
+-??? sentence embeddings
++??? sentence-transformers
+ ??? LLM embeddings
+ ??? semantic tokenization
+ 
+@@ -96,34 +96,32 @@ Candidate models:
+ 
+ 5. Prosody / Emotion Encoder
+ Extract expressive speech features such as:
+-
+ ??? pitch contour
+ ??? energy contour
++??? rhythm
+ ??? speaking rate
+ ??? emotional tone
+ 
+ Possible sources:
+ ??? prosody encoders used in StyleTTS2
+-??? speech emotion recognition models
++??? Speech Emotion Recognition networks
+ 
+ **6. Transmission Layer**
+-
+ Only transmit:
+-
+-semantic representation
+-speaker embedding
+-prosody embedding
++??? semantic representation
++??? speaker embedding
++??? prosody embedding
+ 
+ **Decoder Side:**
+ 
+ 7. Semantic Reconstruction
+ Rebuild the textual / semantic representation.
+-8. Generative TTS
+ 
+-Conditioned on:
+-text / semantic content
+-speaker embedding
+-prosody embedding
++8. Generative TTS
++Conditioned on previous signals:
++??? text / semantic content
++??? speaker embedding
++??? prosody embedding
+ 
+ Candidate models:
+ ??? VALL???E
+@@ -239,14 +237,13 @@ To achieve the <300ms requirement while preserving emotion:
+ 
+ ?????????
+ 
+-### 10. Immediate Next Tasks
++### 10. Immediate Next Tasks (Roadmap)
+ 
+-1. Build a full research landscape document mapping the state of the art, with special focus on End-to-End Neural Audio Codecs.
+-2. Expand the papers library and collect PDFs (add recent papers on EnCodec, Mimi, and semantic tokens).
+-3. Design full_system_design.md with a detailed architecture, contrasting the STT->TTS cascade vs. direct Neural Codecs.
+-4. Define experiment protocols inside:
+-   experiments/
+-5. Implement the first prototype pipeline (Baseline on Nvidia A10G).
++1. **Investigaci??n (SoA Mapping):** Build a full research landscape document mapping the state of the art, with special focus on **Audio Language Models and Neural Codecs**.
++2. **Arquitectura (`full_system_design.md`):** Design detailed architecture comparing the modular cascade (STT -> LLM/Embeddings -> TTS) vs. End-to-End Neural Codecs.
++3. **PoC 1 (High Latency):** Implement the first prototype pipeline (Baseline on Nvidia A10G) using Whisper + StyleTTS2/XTTS to prove semantic transmission viability.
++4. **PoC 2 (Low Latency):** Implement a discrete token pipeline (Encodec / Mimi) aiming for bandwidth optimization and <300ms latency.
++5. Define detailed experiment protocols inside `experiments/`.
+ 
+ ?????????
+ 
+diff --git a/README.md b/README.md
+index ac943ec..f9c51d1 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,4 @@
+ # Semantic Voice Communication Research
+-<<<<<<< HEAD
+-=======
+ 
+ Project to investigate semantic communication for voice transmission.
+ 
+@@ -13,10 +11,11 @@ Main areas:
+ - Generative voice reconstruction
+ - Bitrate efficiency vs VoIP
+ 
+-Directory structure:
+-- docs/ : conceptual documents
+-- architecture/ : system architecture
+-- experiments/ : experiment designs
+-- papers/ : collected research papers
+-- notes/ : working notes
+->>>>>>> f1725f5 (Initial research structure for semantic voice communication)
++## Documentation Map
++
++- [`PROJECT_STATE.md`](PROJECT_STATE.md) : **Central documentation defining the architecture, state of the art mapping, and planned experiments.**
++- `docs/` : conceptual documents and detailed research plans.
++- `architecture/` : system architecture drafts and diagrams.
++- `experiments/` : placeholder for experimental designs.
++- `papers/` : collected research papers.
++- `notes/` : working notes.
+diff --git a/research.md b/research.md
+deleted file mode 100644
+index cfe75fe..0000000
+--- a/research.md
++++ /dev/null
+@@ -1 +0,0 @@
+-## Objetivo\nInvestigar un sistema donde la voz se transmita sem??nticamente (Texto + Par??metros de Prosodia) y se reconstruya en el destino usando clonaci??n de voz.\n\n### Puntos clave:\n- Transcripci??n de voz a texto.\n- Captura de prosodia e intencionalidad.\n- Clonaci??n de voz del emisor.\n- Reconstrucci??n emocional en el receptor.
