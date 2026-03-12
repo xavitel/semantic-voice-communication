@@ -1,6 +1,4 @@
 # Semantic Voice Communication Research
-<<<<<<< HEAD
-=======
 
 Project to investigate semantic communication for voice transmission.
 
@@ -13,10 +11,11 @@ Main areas:
 - Generative voice reconstruction
 - Bitrate efficiency vs VoIP
 
-Directory structure:
-- docs/ : conceptual documents
-- architecture/ : system architecture
-- experiments/ : experiment designs
-- papers/ : collected research papers
-- notes/ : working notes
->>>>>>> f1725f5 (Initial research structure for semantic voice communication)
+## Documentation Map
+
+- [`PROJECT_STATE.md`](PROJECT_STATE.md) : **Central documentation defining the architecture, state of the art mapping, and planned experiments.**
+- `docs/` : conceptual documents and detailed research plans.
+- `architecture/` : system architecture drafts and diagrams.
+- `experiments/` : placeholder for experimental designs.
+- `papers/` : collected research papers.
+- `notes/` : working notes.
