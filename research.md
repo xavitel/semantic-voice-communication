@@ -1,0 +1,1 @@
+## Objetivo\nInvestigar un sistema donde la voz se transmita semánticamente (Texto + Parámetros de Prosodia) y se reconstruya en el destino usando clonación de voz.\n\n### Puntos clave:\n- Transcripción de voz a texto.\n- Captura de prosodia e intencionalidad.\n- Clonación de voz del emisor.\n- Reconstrucción emocional en el receptor.
