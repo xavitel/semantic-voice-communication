@@ -42,22 +42,48 @@
    * **Link:** [arXiv:2405.00233](https://arxiv.org/abs/2405.00233) | [PDF](https://arxiv.org/pdf/2405.00233)
    * **Note:** A dual-encoder architecture that compresses audio down to 0.31 kbps - 1.40 kbps by combining a semantic encoder (AudioMAE) and an acoustic encoder, decoded via diffusion. Ultra-low bitrate benchmark.
 
+
+11. **"DualCodec: High-Quality Speech Tokenizer with Semantic-Acoustic Decoupling"** (May 2025)
+   * **Authors:** Gyeongman Kim, Myeonghun Lee, et al.
+   * **Link:** [arXiv:2505.13000](https://arxiv.org/abs/2505.13000) | [PDF](https://arxiv.org/pdf/2505.13000)
+   * **Note:** Proposes dual-frame-rate semantic + waveform token streams to improve language-modeling quality while preserving synthesis fidelity.
+
+12. **"XY-Tokenizer: Addressing the Semantic-Acoustic Conflict in Speech Tokenizers"** (June 2025)
+   * **Authors:** Yizhi Li, Yidong Wang, et al.
+   * **Link:** [arXiv:2506.23325](https://arxiv.org/abs/2506.23325) | [PDF](https://arxiv.org/pdf/2506.23325)
+   * **Note:** Introduces explicit disentanglement of semantic and acoustic information to reduce the quality/intelligibility trade-off.
+
+13. **"TaDiCodec: Text-Aware Diffusion-Guided Neural Audio Codec at Ultra-Low Bitrate"** (Aug 2025)
+   * **Authors:** Yiteng Huang, Xiang Li, et al.
+   * **Link:** [arXiv:2508.16790](https://arxiv.org/abs/2508.16790) | [PDF](https://arxiv.org/pdf/2508.16790)
+   * **Note:** Uses diffusion-based tokenization with text guidance for ultra-low bitrate speech coding and improved intelligibility.
+
+14. **"Glaris: Error-Resilient Speech Semantic Communication under Packet Loss"** (Dec 2025)
+   * **Authors:** Sijie Wang, Xiaowei Wang, et al.
+   * **Link:** [arXiv:2512.08203](https://arxiv.org/abs/2512.08203) | [PDF](https://arxiv.org/pdf/2512.08203)
+   * **Note:** Focuses on resilient semantic speech communication under lossy channels, directly relevant for real network conditions.
+
+15. **"LargeSC: Large Foundation Models for Semantic Communication in Speech Transmission"** (Dec 2025)
+   * **Authors:** Yuchen Chen, Xiaoyuan Wang, et al.
+   * **Link:** [arXiv:2512.04711](https://arxiv.org/abs/2512.04711) | [PDF](https://arxiv.org/pdf/2512.04711)
+   * **Note:** Introduces adaptive bitrate control, UEP, and packet-loss recovery with foundation-model-based components.
+
 ## Core / Foundational Neural Codecs
-11. **"Moshi: a speech-text foundation model for real-time dialogue"** (Kyutai, 2024) [Link](https://arxiv.org/pdf/2410.00037)
-12. **"LDCodec: A high quality neural audio codec with low-complexity decoder"** (2025) [Link](https://arxiv.org/pdf/2510.15364)
-13. **"SNAC: Multi-Scale Neural Audio Codec"** (2024) [Link](https://arxiv.org/pdf/2410.14411)
-14. **"SoundStream: An End-to-End Neural Audio Codec"** (Google, 2021) [Link](https://arxiv.org/pdf/2107.03312)
-15. **"EnCodec: High Fidelity Neural Audio Compression"** (Meta, 2022)
+16. **"Moshi: a speech-text foundation model for real-time dialogue"** (Kyutai, 2024) [Link](https://arxiv.org/pdf/2410.00037)
+17. **"LDCodec: A high quality neural audio codec with low-complexity decoder"** (2025) [Link](https://arxiv.org/pdf/2510.15364)
+18. **"SNAC: Multi-Scale Neural Audio Codec"** (2024) [Link](https://arxiv.org/pdf/2410.14411)
+19. **"SoundStream: An End-to-End Neural Audio Codec"** (Google, 2021) [Link](https://arxiv.org/pdf/2107.03312)
+20. **"EnCodec: High Fidelity Neural Audio Compression"** (Meta, 2022)
 
 ## Voice Generation & Intermediate Representations
-16. **"VALL-E: Neural Codec Language Models"** (Microsoft)
-17. **"YourTTS"**
-18. **"StyleTTS2"**
+21. **"VALL-E: Neural Codec Language Models"** (Microsoft)
+22. **"YourTTS"**
+23. **"StyleTTS2"**
 
 ## Speech Representation Learning
-19. **"wav2vec 2.0"**
-20. **"HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units"**
+24. **"wav2vec 2.0"**
+25. **"HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units"**
 
 ## Emotion and Prosody
-21. **"Speech Emotion Recognition Using Deep Learning"**
-22. **"Prosody Modeling for Neural TTS"**
+26. **"Speech Emotion Recognition Using Deep Learning"**
+27. **"Prosody Modeling for Neural TTS"**

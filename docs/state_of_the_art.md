@@ -268,3 +268,40 @@ Los resultados del estado del arte sugieren una estrategia de investigación en 
 2. **Fase 2 (Objetivo — Baja latencia):** Migrar al Enfoque 2, adoptando una arquitectura inspirada en SemantiCodec (dual encoder semántico + acústico) con las técnicas de streaming de JHCodec (zero-lookahead) y Mimi (1.1 kbps, 80 ms), aplicando destilación de emoción tipo StreamVoiceAnon+ para preservar la prosodia.
 
 La convergencia de avances en codecs neuronales, audio language models y comunicaciones semánticas durante el período 2024–2026 crea una ventana de oportunidad sin precedentes para materializar un sistema de comunicación semántica de voz viable, con reducciones de ancho de banda de 10–200× respecto a VoIP convencional y latencias potencialmente compatibles con comunicación bidireccional en tiempo real.
+
+---
+
+## 2.9 Novedades 2025–2026 no incorporadas en la versión inicial
+
+Durante 2025–2026 emergieron líneas que refuerzan y ajustan la arquitectura propuesta:
+
+### 2.9.1 Nuevos tokenizers/códecs semánticos
+
+- **DualCodec (2025):** desacopla explícitamente tokens semánticos y de waveform a tasas distintas, mejorando el compromiso entre modelado lingüístico y fidelidad acústica.
+- **XY-Tokenizer (2025):** aborda el conflicto semántica-acústica con disentanglement explícito de representaciones.
+- **TaDiCodec (2025):** codec guiado por difusión y texto, diseñado para bitrates ultra-bajos con mayor inteligibilidad.
+
+**Implicación para el proyecto:** la selección de tokenizer/codec no debe limitarse a Mimi/SemantiCodec; es necesario un benchmark comparativo orientado a downstream tasks (WER/SIM/MOS y latencia).
+
+### 2.9.2 Robustez de canal como requisito de primer nivel
+
+- **Glaris (2025):** plantea comunicación semántica de voz robusta frente a pérdidas de paquetes.
+- **LargeSC (2025):** integra control adaptativo de bitrate, UEP y recuperación generativa para escenarios reales de transmisión.
+
+**Implicación para el proyecto:** el roadmap necesita una fase explícita de evaluación bajo packet loss/jitter. En redes reales, el rendimiento en canal ideal no es suficiente para validar viabilidad VoIP-like.
+
+### 2.9.3 Necesidad de estandarización de evaluación
+
+Los surveys recientes de Semantic Communications subrayan una brecha persistente en protocolos comparables (datasets, canales, objetivos y métricas heterogéneas entre trabajos).
+
+**Implicación para el proyecto:** definir un **Benchmark Protocol v1** interno y reproducible para evitar conclusiones no comparables al contrastar arquitecturas.
+
+## 2.10 Ajuste propuesto de la estrategia del sistema
+
+Además de los dos enfoques principales (cascada modular vs codec end-to-end), se recomienda añadir tres ejes transversales:
+
+1. **Selección formal de tokenizer/codec** con criterios multiobjetivo: bitrate, latencia, WER, SIM, MOS/UTMOS y costo computacional.
+2. **Robustez de red** como experimento dedicado (packet loss/jitter + mecanismos UEP/PLC).
+3. **Protocolo de evaluación reproducible** para comparar resultados internos y externos con trazabilidad.
+
+Con estos ajustes, la investigación evoluciona de una prueba de concepto en condiciones ideales a un plan publicable y transferible a despliegue real.
