@@ -270,3 +270,22 @@ Implemented:
 
 Next milestone:
 Complete state‑of‑the‑art research mapping and begin prototype experiments.
+───
+
+### 13. 2026 Roadmap Update (Research Direction)
+
+To align with 2025–2026 progress in semantic speech transmission, the project now adds three priorities:
+
+1. **Tokenizer/Codec Selection Framework**
+   - Evaluate candidates beyond Mimi/SemantiCodec, including DualCodec, XY-Tokenizer, and TaDiCodec.
+   - Multi-objective decision criteria: bitrate, latency, ASR-WER, speaker similarity, MOS/UTMOS, compute cost.
+
+2. **Network Robustness Workstream**
+   - Add packet-loss and jitter scenarios as first-class evaluation conditions.
+   - Include adaptive protection strategies (e.g., unequal error protection and generative packet-loss recovery).
+
+3. **Benchmark Protocol v1**
+   - Fix datasets, splits, channel conditions, and metrics to ensure reproducible and fair model comparisons.
+
+**New planned experiment:**
+Experiment 6 — Packet-loss robustness and adaptive semantic transmission.
