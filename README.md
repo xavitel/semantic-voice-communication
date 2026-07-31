@@ -221,8 +221,13 @@ This project sits at the intersection of:
 | [`docs/`](docs/) | Conceptual documents and detailed research plans |
 | [`docs/research_plan.md`](docs/research_plan.md) | Research roadmap with phases and experimental design |
 | [`docs/bitrate_analysis.md`](docs/bitrate_analysis.md) | Comparison between VoIP bitrates and semantic transmission estimates |
-| [`docs/state_of_the_art.md`](docs/state_of_the_art.md) | Comprehensive state-of-the-art survey (neural codecs, ALMs, semantic comm.) |
+| [`docs/state_of_the_art.md`](docs/state_of_the_art.md) | Citation-backed draft of the state of the art |
+| [`docs/benchmark_protocol_v1.md`](docs/benchmark_protocol_v1.md) | Reproducible evaluation protocol for codecs and semantic pipelines |
 | [`papers/`](papers/) | Collected research papers and reference materials |
+| [`papers/paper_index.md`](papers/paper_index.md) | Annotated index with a Spanish abstract for every paper |
+| [`papers/paper_matrix.csv`](papers/paper_matrix.csv) | Evidence matrix for the 29-paper corpus |
+| [`papers/notes/`](papers/notes/) | Individual structured reading notes |
+| [`references.bib`](references.bib) | BibTeX bibliography for the corpus |
 | [`papers/important_papers_list.md`](papers/important_papers_list.md) | Curated list of key papers across all relevant research fields |
 
 ## Current Status
@@ -236,7 +241,8 @@ This project sits at the intersection of:
 | Architecture draft | ✅ Done |
 | Bitrate analysis | ✅ Done |
 | Paper collection | ✅ Done |
-| State of the art survey | ✅ Done |
+| Literature evidence matrix and notes | ✅ First complete draft |
+| State of the art survey | 🟡 Citation-backed draft |
 | Prototype implementation | 🔲 Next |
 | Experimental evaluation | 🔲 Planned |
 
@@ -455,8 +461,13 @@ La investigación de StreamVoiceAnon+ (2026) ha revelado que los tokens de conte
 | [`architecture/`](architecture/) | Definiciones de arquitectura del sistema |
 | [`docs/research_plan.md`](docs/research_plan.md) | Hoja de ruta de investigación con fases y diseño experimental |
 | [`docs/bitrate_analysis.md`](docs/bitrate_analysis.md) | Comparación de bitrates VoIP vs. transmisión semántica |
-| [`docs/state_of_the_art.md`](docs/state_of_the_art.md) | Encuesta exhaustiva del estado del arte |
+| [`docs/state_of_the_art.md`](docs/state_of_the_art.md) | Borrador trazable del estado del arte con citas |
+| [`docs/benchmark_protocol_v1.md`](docs/benchmark_protocol_v1.md) | Protocolo reproducible para comparar arquitecturas |
 | [`papers/`](papers/) | Artículos de investigación y materiales de referencia |
+| [`papers/paper_index.md`](papers/paper_index.md) | Índice comentado con resumen en español de cada paper |
+| [`papers/paper_matrix.csv`](papers/paper_matrix.csv) | Matriz de evidencia de los 29 papers |
+| [`papers/notes/`](papers/notes/) | Fichas de lectura individuales |
+| [`references.bib`](references.bib) | Bibliografía BibTeX del corpus |
 
 ## Estado Actual
 
@@ -469,7 +480,8 @@ La investigación de StreamVoiceAnon+ (2026) ha revelado que los tokens de conte
 | Borrador de arquitectura | ✅ Hecho |
 | Análisis de bitrate | ✅ Hecho |
 | Recopilación de artículos | ✅ Hecho |
-| Encuesta del estado del arte | ✅ Hecho |
+| Matriz de evidencia y fichas | ✅ Primer borrador completo |
+| Estado del arte | 🟡 Borrador trazable con citas |
 | Implementación del prototipo | 🔲 Siguiente |
 | Evaluación experimental | 🔲 Planificada |
 

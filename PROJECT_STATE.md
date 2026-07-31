@@ -46,6 +46,18 @@ papers/
 papers/important_papers_list.md
 Initial list of relevant research papers across several fields.
 
+papers/paper_index.md
+Annotated index with a Spanish abstract for every paper in the corpus.
+
+papers/paper_matrix.csv
+Normalized evidence matrix for comparative analysis.
+
+papers/notes/
+Individual structured reading notes generated from the literature catalog.
+
+references.bib
+BibTeX bibliography for the complete local corpus.
+
 experiments/
 Reserved for experimental implementations.
 
@@ -166,9 +178,14 @@ Speech Representation Learning
 Voice Cloning / Neural TTS
 Speech Emotion Modeling
 
-Key papers listed in:
+Literature assets:
 
-papers/important_papers_list.md
+- papers/paper_index.md
+- papers/paper_matrix.csv
+- papers/notes/
+- references.bib
+- docs/state_of_the_art.md
+- docs/benchmark_protocol_v1.md
 
 ───
 

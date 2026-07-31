@@ -17,9 +17,13 @@ Key questions:
 - How robust is semantic transmission under lossy networks?
 
 Deliverables:
-- Annotated bibliography
-- Comparison table of methods
-- Benchmark protocol v1 (datasets, splits, metrics, network conditions)
+- [x] Annotated bibliography: `papers/paper_index.md` and `papers/notes/`
+- [x] Comparison table of methods: `papers/paper_matrix.csv`
+- [x] BibTeX corpus: `references.bib`
+- [x] State-of-the-art draft: `docs/state_of_the_art.md`
+- [x] Benchmark protocol v1: `docs/benchmark_protocol_v1.md`
+
+The deliverables are first complete drafts. Before submission, every numerical claim used in the thesis must be rechecked against the corresponding experimental table in the source PDF.
 
 ## Phase 2: Architecture Definition
 

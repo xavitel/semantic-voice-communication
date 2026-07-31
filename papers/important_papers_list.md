@@ -1,5 +1,7 @@
 # Important Papers to Review
 
+> This historical shortlist is kept for context. The maintained corpus is now in [`literature_catalog.json`](literature_catalog.json), with an annotated Spanish index in [`paper_index.md`](paper_index.md) and a comparison matrix in [`paper_matrix.csv`](paper_matrix.csv).
+
 ## Semantic Communications
 1. **"Deep Learning Enabled Semantic Communication Systems"**
 2. **"Semantic Communications: A Survey"**
