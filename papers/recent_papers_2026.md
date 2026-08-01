@@ -1,5 +1,7 @@
 # Recent Papers (2025–2026)
 
+> This focused shortlist is complemented by the maintained [`paper_index.md`](paper_index.md), [`paper_matrix.csv`](paper_matrix.csv), and individual notes in [`notes/`](notes/).
+
 This file complements `important_papers_list.md` with a focused selection of recent papers that are especially relevant for implementation decisions.
 
 ## Semantic Communication & Generative Approaches
